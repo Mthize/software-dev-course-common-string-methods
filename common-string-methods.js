@@ -70,23 +70,38 @@ let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
 let hasJavaScript; // Your code here
+let hasJavaScript = inputString.includes("JavaScript");
 let codingPosition; // Your code here
+let codingPosition = inputString.indexOf("Coding");
 let startsWithWelcome; // Your code here
+let startsWithWelcome = inputString.trim().startsWith("Welcome");
 let endsWithToday; // Your code here
+let endsWithToday = inputString.trim().endsWith("today.");
 
 // 2. Transforming
 let lowercaseString; // Your code here
+let endsWithToday = inputString.trim().endsWith("today.");
 let uppercaseString; // Your code here
+let lowercaseString = inputString.toLowerCase();
 let trimmedString; // Your code here
+let trimmedString = inputString.trim();
 let replacedString; // Your code here
+let replacedString = inputString.replace("JavaScript", "coding");
 
 // 3. Breaking Apart
 let wordsArray; // Your code here
+let wordsArray = inputString.split(" ");
 
 // 4. Retrieving
 let firstCharacter; // Your code here
+let firstCharacter = inputString.charAt(0);
 let extractedBootcamp; // Your code here
+let extractedBootcamp = trimmedString.slice(
+  trimmedString.indexOf("Bootcamp"),
+  trimmedString.indexOf("Bootcamp") + "Bootcamp".length
+);
 
+// Log all results
 // Log all results
 console.log({
   hasJavaScript,
